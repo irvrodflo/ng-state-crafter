@@ -296,6 +296,34 @@ All callbacks passed to `watch`, `when`, and `effect` are internally wrapped wit
 
 ---
 
+## Path Alias (optional)
+
+If you prefer a shorter import, configure a path alias in your `tsconfig.json`:
+
+```json
+{
+  "compilerOptions": {
+    "paths": {
+      "@state-crafter": ["./node_modules/@irv-labs/ngx-state-crafter"]
+    }
+  }
+}
+```
+
+Then import from the alias instead:
+
+```typescript
+// Before
+import { craftState } from '@irv-labs/ngx-state-crafter';
+
+// After
+import { craftState } from '@state-crafter';
+```
+
+> This is purely a local convenience — it does not affect the published package or your teammates unless they add the same alias to their `tsconfig.json`.
+
+---
+
 ## Philosophy
 
 - **No boilerplate** — one function call to get a fully reactive state
