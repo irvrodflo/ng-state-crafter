@@ -12,6 +12,9 @@
     "isolatedModules": true,
     "experimentalDecorators": true,
     "importHelpers": true,
+    "paths": {
+      "state-crafter": ["./dist/state-crafter"]
+    },
     "target": "ES2022",
     "module": "preserve"
   },
@@ -21,5 +24,13 @@
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   },
-  "files": []
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/ngx-state-crafter/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/ngx-state-crafter/tsconfig.spec.json"
+    }
+  ]
 }

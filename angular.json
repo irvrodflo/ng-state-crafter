@@ -6,5 +6,31 @@
   },
   "newProjectRoot": "projects",
   "projects": {
+    "ngx-state-crafter": {
+      "projectType": "library",
+      "root": "projects/ngx-state-crafter",
+      "sourceRoot": "projects/ngx-state-crafter/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:ng-packagr",
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-state-crafter/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-state-crafter/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular/build:unit-test",
+          "options": {
+            "tsConfig": "projects/ngx-state-crafter/tsconfig.spec.json"
+          }
+        }
+      }
+    }
   }
 }

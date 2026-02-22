@@ -1,0 +1,28 @@
+{
+  "name": "@irv-labs/ngx-state-crafter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "keywords": [
+    "angular",
+    "signals",
+    "angular-signals",
+    "state",
+    "state-management",
+    "store",
+    "reactive",
+    "reactive-state",
+    "ng",
+    "lightweight",
+    "computed",
+    "effect",
+    "watch",
+    "typescript"
+  ],
+  "peerDependencies": {
+    "@angular/core": ">=17.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
